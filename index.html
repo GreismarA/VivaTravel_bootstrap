@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Logo -->
     <link rel="shortcut icon" href="./Img/Logoviva.jpg">
+    <!-- Link Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Link Logos externos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Link Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link CSS -->
     <link rel="stylesheet" href="./Css/estilos.css">
     <title>Viva Travel</title>
 </head>
@@ -57,7 +63,7 @@
                 <section>
                     <!-- Archipielago los Roques -->
                     <div class="container">
-                        <div class="container__text">
+                        <div class="container__text wow animate__animated animate__backInLeft">
                             <h4>Archipielago Los Roques</h4>
                             <h3 class="container__subtitle">Los Roques</h3>
                             <p class="container__parrafo">Esta isla, con sus playas y cayos, se ha convertido en una de
@@ -75,7 +81,7 @@
                     </div>
                     <!-- Canaima -->
                     <div class="containerReverse">
-                        <div class="containerReverse__text">
+                        <div class="containerReverse__text wow animate__animated animate__backInLeft">
                             <h4>Canaima</h4>
                             <h3 class="containerReverse__subtitle">Salto Angel</h3>
                             <p class="containerReverse__parrafo">En medio de un paisaje único, la caída de agua más
@@ -93,7 +99,7 @@
                     </div>
                     <!-- Falcon -->
                     <div class="container">
-                        <div class="container__text">
+                        <div class="container__text wow animate__animated animate__backInLeft">
                             <h4>Falcon</h4>
                             <h3 class="container__subtitle">Adicora</h3>
                             <p class="container__parrafo">El encanto de sus costas, lo imponente de su desierto y la
@@ -110,7 +116,7 @@
                     </div>
                     <!-- Apure -->
                     <div class="containerReverse">
-                        <div class="containerReverse__text">
+                        <div class="containerReverse__text wow animate__animated animate__backInLeft">
                             <h4>Apure</h4>
                             <h3 class="containerReverse__subtitle">Los Llanos</h3>
                             <p class="containerReverse__parrafo">En un horizonte que parece perderse de vista, la
@@ -167,6 +173,11 @@
             </div>
         </footer>
     </div>
+
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

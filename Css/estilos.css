@@ -113,8 +113,13 @@ ul li:hover ul {
   text-align: center;
   margin: 0.5rem 0.6rem;
   word-spacing: 0.1rem;
+  line-height: 1.5rem;
 }
 
+/* Transformacion del parrafo inicial */
+.parrafo__inicial{
+  transform: rotateX(20deg);
+}
 /* Seccion */
 .container {
   display: flex;
