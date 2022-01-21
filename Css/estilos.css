@@ -17,10 +17,13 @@ body {
 .row {
   margin-left: 0;
   margin-right: 0;
+  padding: 0;
 }
 
+/* Header */
 header {
   background-color: #00909E;
+  width: 100vw;
 }
 
 .logo {
@@ -49,8 +52,10 @@ header {
   align-items: center;
 }
 
+/* Main */
 .video__principal {
   width: 100vw;
+  padding: 0;
 }
 
 .parrafo__inicial {
@@ -58,17 +63,22 @@ header {
   text-align: center;
   word-spacing: 0.5rem;
   line-height: 1.8rem;
+  font-size: 0.9rem;
+  padding: 2rem;
 }
 
 .contenedor,
 .contenedorReverse {
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0.1rem;
 }
 
 .contenedor__texto,
 .contenedorReverse__texto {
   text-align: center;
-  margin: 0.2rem;
+  padding: 1rem 2rem;
 }
 
 h4 {
@@ -93,39 +103,82 @@ h4 {
   line-height: 2rem;
 }
 
-.footer {
-  background-color: #00909E;
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.contenedor__img, .contenedorReverse__img{
+  width: 300px;
+  height: 200px;
+  margin: 0.1rem 3rem;
+  padding: 0.1rem;
+  box-shadow: 8px 11px 5px -4px rgb(134 134 140 / 49%);
+  -webkit-box-shadow: 8px 11px 5px -4px rgb(134 134 140 / 49%);
+  -moz-box-shadow: 8px 11px 5px -4px rgba(134, 134, 140, 0.49);
 }
 
-.footer__parrafo,
-.footer ul,
-.footer__form,
-iframe {
-  display: none;
+/* Footer */
+.footer {
+  background-color: #00909E;
+  margin-top: 10rem;
+  width: 100vw;
+  padding: 1rem 0rem 2rem 0rem;
+}
+
+.contenedor__footer{
+  margin: 1rem 0rem;
+  width: 100%;
+  text-align: center;
+  border-bottom: solid white 1px;
 }
 
 .contenedor__footer--active {
+  margin: 1rem 0rem;
+  width: 100%;
   text-align: center;
+  border-bottom: solid white 1px;
 }
 
-.footer__subtitulo {
+.footer__subtitulo{
+  font-weight: 600;
+  letter-spacing: 0.1rem;
   color: white;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 300;
-  border-bottom: solid 2px white;
+  font-size: 1.3rem;
+  font-family: serif;
+}
+
+.footer__parrafo{
+  color: white;
+  margin-top: 1rem;
+  display: none;
+}
+
+.contenedor__footer ul{
+  list-style: none;
+  color: white;
+  padding-top: 0.5rem;
+  display: none;
+}
+
+.footer__iframe{
+  border-radius: 0.2rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.footer__form{
+  display: none;
 }
 
 .fab {
   color: white;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  display: none;
 }
 
 /* Seccion ¿Quienes Somos? */
+/* Main */
+.contenido2{
+  margin-bottom: 5rem;
+}
+
 .second__text {
   margin-top: 1.5rem;
 }
@@ -145,7 +198,18 @@ iframe {
   text-align: center;
 }
 
+.second__img{
+  width: 300px;
+  margin: 1rem 3rem;
+}
+
+.carousel-item{
+  width: 90%;
+  margin: 1.3rem;
+}
+
 /* Seccion destinos */
+/* MAin */
 .third__titulo h1 {
   color: #142850;
   margin-top: 2rem;
@@ -174,6 +238,7 @@ iframe {
 }
 
 /* Seccion Contactanos */
+/* Main */
 .formContainer {
   width: 75%;
   background-color: #142850;
@@ -233,7 +298,9 @@ iframe {
   margin: 1.5rem auto;
   border-radius: 0.5rem
 }
+
 /* Seccion Paquetes */
+/* Main */
 .paquetesTitulo{
   margin: 3rem;
   color: #142850;
@@ -244,15 +311,18 @@ iframe {
 .paquetes{
   margin: 1rem;
 }
+
 .subtitulo__paquetes{
   font-style: italic;
   color: #142850;
   text-align: center;
   font-weight: 400;
 }
+
 .subtitulo__plan{
   font-weight: 600;
 }
+
 .parrafo__paquetes{
   font-size: 0.8rem;
   text-align: center;
@@ -264,11 +334,13 @@ iframe {
 @media (min-width: 768px) {
 
   /* Seccion home */
+  /* Header */
   .navbar {
     display: flex;
     justify-content: space-around;
   }
 
+  /* Main */
   .contenedor,
   .contenedorReverse {
     margin: 1rem 2rem;
@@ -280,6 +352,7 @@ iframe {
     text-align: center;
     word-spacing: 0.8rem;
     line-height: 2rem;
+    padding: 2rem;
   }
 
   .contenedor__texto,
@@ -304,9 +377,9 @@ iframe {
     line-height: 2rem;
     word-spacing: 0.8rem;
   }
-
-  .footer {
-    margin-top: 10rem;
+  .contenedor__img, .contenedorReverse__img{
+    width: 400px;
+    height: 300px;
   }
 
   /* Seccion ¿Quienes Somos? */
@@ -319,7 +392,16 @@ iframe {
     line-height: 2rem;
   }
 
+  .second__img{
+    width: 400px;
+    margin: 1rem 10rem;
+  }
+  
+  .carousel-item{
+    margin: 2.5rem;
+  }
   /* Seccion Destinos */
+  /* Main */
   .third__parrafo,
   .experiencia__parrafo {
     font-size: 0.9rem;
@@ -335,24 +417,31 @@ iframe {
   }
 
   /* Seccion Contactanos */
+  /* Main */
   .select{
     margin: 1rem 4rem 3rem 6rem;
   }
+
   /* Seccion Paquetes */
+  /* Main */
   .paquetesTitulo{
     font-size: 3rem;
   }
+
   .paquetes{
     display: flex;
     flex-direction: column;
     justify-items: center;
   }
+
   .subtitulo__paquetes{
     font-weight: 600;
   }
+
   .subtitulo__plan{
     text-align: center;
   }
+
   .parrafo__paquetes{
     font-size: 1rem;
     line-height: 2rem;
@@ -365,6 +454,7 @@ iframe {
 @media (min-width: 1440px) {
 
   /* Seccion Home */
+  /* Header */
   .logo {
     width: 150px;
     height: 100px;
@@ -376,12 +466,24 @@ iframe {
     font-size: 1.5rem;
   }
 
-  .contenedor,
-  .contenedorReverse {
+  /* Main */
+  .parrafo__inicial{
+    width: 100%;
+    padding: 1rem 10rem;
+    font-size: 1rem;
+  }
+  .contenedor{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-items: center;
-    margin: 2rem 10rem;
+    margin: 2rem 2rem;
+  }
+
+  .contenedorReverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-items: center;
+    margin: 5rem 2rem;
   }
 
   .contenedor__parrafo,
@@ -392,23 +494,94 @@ iframe {
     padding: 0.2rem 2rem 2rem 2rem;
   }
 
-  .footer {
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  /* Footer */
+  .footer{
+    width: 100%;
+    background-color: #00909E;
+    margin-top: 10rem;
+    align-items: stretch;
+    justify-content: space-between;
   }
 
-  .footer__parrafo,
-  .footer ul,
-  .footer__form,
-  iframe {
+  .contenedor__footer{
+    margin: 2rem;
+    padding: 0.5rem 4rem;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .footer__subtitulo{
+    width: 60%;
+    font-weight: 600;
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+    color: white;
+  }
+
+  .contenedor__footer ul{
+    list-style: none;
+    color: white;
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+    display: block;
+  }
+
+  .contenedor__footer ul li{
+    padding-bottom: 1rem;
+  }
+
+  .footer__parrafo{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    display: block;
+  }
+
+  .footer__iframe{
+    margin: 1.5rem 0.5rem;
+    border-radius: 0.2rem;
+    display: block;
+  }
+
+  .contenedor__footer--active{
+    margin: 2rem;
+    padding: 0.5rem 4rem 0.5rem 8rem;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .footer__form{
+    display: flex;
+  }
+
+  .input__suscrib{
+    margin: 0.5rem;
+    width: 11vw;
+    background-color: #00909E;
+    color: white;
+    border: none;
+    border-bottom: solid 1.5px #142850;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .input__enviar{
+    background-color: #142850;
+    color: white;
+    border-radius: 0.3rem;
+    font-weight: 200;
+    margin: 1rem 2rem;
+    border: #142850 2px;
+    width: 5rem;
+    height: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .fab{
+    color: white;
+    font-size: 2rem;
+    margin: 0.5rem;
     display: inline-block;
-  }
-
-  .contenedor__footer {
-    display: flex;
-    flex-direction: column;
   }
 
   /* Seccion ¿quienes somos? */
@@ -442,6 +615,10 @@ iframe {
     margin-right: 2rem;
   }
 
+  .carousel-item{
+    margin: 4.5rem;
+  }
+  
   /* Seccion Destinos */
   /* Main */
   .third__subtitulo {
@@ -503,6 +680,7 @@ iframe {
   }
 
   /* Seccion Paquetes */
+  /* Main */
   .texto__paquetes{
     margin-top: 3rem;
   }

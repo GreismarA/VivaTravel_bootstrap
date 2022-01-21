@@ -25,9 +25,9 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!-- Encabezado -->
-        <header class="row header">
+    <!-- Encabezado -->
+    <header class="container-fluid header">
+        <div class="row">
             <a href="./index.html" class="col-3"><img src="./img/Logoviva.jpg" alt="Logo vivatravel"
                     class=" img-fluid logo"></a>
             <nav class=" col-9  navbar navbar-expand-lg navbar-light">
@@ -68,46 +68,50 @@
                     </div>
                 </div>
             </nav>
-        </header>
-        <!-- Division del encabezado y contenido -->
-        <main class="row">
-            <div class="col-12">
-                <section class="formContainer">
-                    <!-- Formulario de contacto -->
-                    <h2 class="formContainer__titulo">Contactanos</h2>
-                    <form action="#" method="get" class="form">
-                        <label for="Nombre" class="form__label">Nombre</label>
-                        <input type="text" name="Nombre" id=Nombre required class="form__input">
+        </div>
+    </header>
 
-                        <label for="Apellido" class="form__label">Apellido</label>
-                        <input type="text" name="Apellido" id="Apellido" required class="form__input">
+    <!-- Division del encabezado y contenido -->
+    <main class="row">
+        <div class="col-12">
+            <section class="formContainer">
+                <!-- Formulario de contacto -->
+                <h2 class="formContainer__titulo">Contactanos</h2>
+                <form action="#" method="get" class="form">
+                    <label for="Nombre" class="form__label">Nombre</label>
+                    <input type="text" name="Nombre" id=Nombre required class="form__input">
 
-                        <label for="Correo" class="form__label">Correo</label>
-                        <input type="email" name="Correo" id=Correo required class="form__input">
+                    <label for="Apellido" class="form__label">Apellido</label>
+                    <input type="text" name="Apellido" id="Apellido" required class="form__input">
 
-                        <label for="Celular" class="form__label">Celular</label>
-                        <input type="tel" name="Celular" id=Celular class="form__input">
-                        <!-- Menu desplegable -->
-                        <label for="Pais" class="form__label">Pais</label>
-                        <select name="Pais" class="select" id="Pais">
-                            <option value="1">Argentina</option>
-                            <option value="2">Colombia</option>
-                            <option value="3">Mexico</option>
-                            <option value="4">Usa</option>
-                            <option value="5">Otro</option>
-                        </select>
-                        <!-- Textarea -->
-                        <label for="mensaje" class="form__label">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" class="form__textarea"></textarea>
-                        <!-- Boton de resetear de enviar la informacion -->
-                        <input type="submit" value="Enviar" class="form__input--submit">
-                    </form>
-                </section>
-            </div>
-        </main>
-        <!-- Pie de pagina -->
-        <footer class="row footer">
-            <div class=" col-12 contenedor__footer">
+                    <label for="Correo" class="form__label">Correo</label>
+                    <input type="email" name="Correo" id=Correo required class="form__input">
+
+                    <label for="Celular" class="form__label">Celular</label>
+                    <input type="tel" name="Celular" id=Celular class="form__input">
+                    <!-- Menu desplegable -->
+                    <label for="Pais" class="form__label">Pais</label>
+                    <select name="Pais" class="select" id="Pais">
+                        <option value="1">Argentina</option>
+                        <option value="2">Colombia</option>
+                        <option value="3">Mexico</option>
+                        <option value="4">Usa</option>
+                        <option value="5">Otro</option>
+                    </select>
+                    <!-- Textarea -->
+                    <label for="mensaje" class="form__label">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" class="form__textarea"></textarea>
+                    <!-- Boton de resetear de enviar la informacion -->
+                    <input type="submit" value="Enviar" class="form__input--submit">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class=" col contenedor__footer">
                 <h3 class="footer__subtitulo">Destinos</h3>
                 <ul>
                     <li>Los Roques</li>
@@ -116,18 +120,19 @@
                     <li>Los Llanos</li>
                 </ul>
             </div>
-            <div class=" col-12 contenedor__footer">
+            <div class="col contenedor__footer">
                 <h3 class="footer__subtitulo">Contactanos</h3>
                 <p class="footer__parrafo">Telefonos +584243803978</p>
                 <p class="footer__parrafo">E-mail vivatravel@gmail.com</p>
-                <p class="footer__parrafo">Dirección: Calle Cali con Calle Veracruz, Torre ABA, Piso 9, Las Mercedes.
+                <p class="footer__parrafo">Dirección: Calle Cali con Calle Veracruz, Torre ABA, Piso 9, Las
+                    Mercedes.
                     Caracas - Venezuela</p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125549.08972855116!2d-66.96040646959244!3d10.468384101150727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58adcd824807%3A0x93dd2eae0a998483!2sCaracas%2C%20Distrito%20Capital%2C%20Venezuela!5e0!3m2!1ses-419!2sar!4v1638853643723!5m2!1ses-419!2sar"
                     width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                     class="footer__iframe"></iframe>
             </div>
-            <div class="col-12 contenedor__footer--active">
+            <div class="col contenedor__footer--active">
                 <h3 class="footer__subtitulo">Suscribete</h3>
                 <p class="footer__parrafo">Y recibe nuestro boletín con ofertas especiales</p>
                 <form class="footer__form">
@@ -139,8 +144,8 @@
                 <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https//web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
     <!-- Link de Script de Animate -->
     <script src="js/wow.js"></script>

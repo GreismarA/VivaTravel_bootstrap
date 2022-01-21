@@ -25,9 +25,9 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!-- Encabezado -->
-        <header class="row header">
+    <!-- Encabezado -->
+    <header class="container-fluid header">
+        <div class="row">
             <a href="./index.html" class="col-3"><img src="./img/Logoviva.jpg" alt="Logo vivatravel"
                     class=" img-fluid logo"></a>
             <nav class=" col-9  navbar navbar-expand-lg navbar-light">
@@ -43,7 +43,8 @@
                                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./quienessomos.html">¿Quienes Somos?</a>
+                                <a class="nav-link active" aria-current="page" href="./quienessomos.html">¿Quienes
+                                    Somos?</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -67,12 +68,16 @@
                     </div>
                 </div>
             </nav>
-        </header>
-        <!-- Contenido Principal -->
-        <main class="container-fluid">
+        </div>
+    </header>
+    <!-- Contenido Principal -->
+    <main>
+        <div class="container-fluid">
             <div class="row">
                 <video src="./videos/videoPrincipal.mp4" autoplay muted loop class="col-12 video__principal"></video>
             </div>
+        </div>
+        <div class="container-fluid">
             <div class="row contenido">
                 <!-- Pequeña presentacion -->
                 <p class=" col-12 parrafo__inicial">Somos la empresa número uno de turismo de aventura en Venezuela. Te
@@ -84,8 +89,10 @@
                     para que disfrutes al máximo!
                 </p>
             </div>
-            <!-- Breve descripcion de destinos -->
-            <section class="row">
+        </div>
+        <!-- Breve descripcion de destinos -->
+        <section class="container-fluid">
+            <div class="row">
                 <div class="col-12">
                     <!-- Archipielago los Roques -->
                     <div class="contenedor">
@@ -105,7 +112,7 @@
                                 aventureros.
                             </p>
                         </div>
-                        <img src="./img/Losroques1.jpg" alt="Los Roques" class=" img-fluid contenedor__img">
+                        <img src="./img/Losroques1.jpg" alt="Los Roques" class="contenedor__img">
                     </div>
                     <!-- Canaima -->
                     <div class="contenedorReverse">
@@ -125,7 +132,7 @@
                                 salvajes.
                             </p>
                         </div>
-                        <img src="./img/Saltoangel1.jpg" alt="Salto Angel" class=" img-fluid contenedorReverse__img">
+                        <img src="./img/Saltoangel1.jpg" alt="Salto Angel" class="contenedorReverse__img">
                     </div>
                     <!-- Falcon -->
                     <div class="contenedor">
@@ -144,7 +151,7 @@
                                 experiencia.
                             </p>
                         </div>
-                        <img src="./img/Falcon1.jpg" alt="Adicora Falcon" class=" img-fluid contenedor__img">
+                        <img src="./img/Falcon1.jpg" alt="Adicora Falcon" class="contenedor__img">
                     </div>
                     <!-- Apure -->
                     <div class="contenedorReverse">
@@ -165,15 +172,17 @@
                                 más grande del mundo?
                             </p>
                         </div>
-                        <img src="./img/Losllanos1.jpg" alt="Chiguiros en el rio"
-                            class=" img-fluid contenedorReverse__img">
+                        <img src="./img/Losllanos1.jpg" alt="Chiguiros en el rio" class="contenedorReverse__img">
                     </div>
                 </div>
-            </section>
-        </main>
-        <!-- Pie de pagina -->
-        <footer class="row footer">
-            <div class=" col-12 contenedor__footer">
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class=" col contenedor__footer">
                 <h3 class="footer__subtitulo">Destinos</h3>
                 <ul>
                     <li>Los Roques</li>
@@ -182,18 +191,19 @@
                     <li>Los Llanos</li>
                 </ul>
             </div>
-            <div class=" col-12 contenedor__footer">
+            <div class="col contenedor__footer">
                 <h3 class="footer__subtitulo">Contactanos</h3>
                 <p class="footer__parrafo">Telefonos +584243803978</p>
                 <p class="footer__parrafo">E-mail vivatravel@gmail.com</p>
-                <p class="footer__parrafo">Dirección: Calle Cali con Calle Veracruz, Torre ABA, Piso 9, Las Mercedes.
+                <p class="footer__parrafo">Dirección: Calle Cali con Calle Veracruz, Torre ABA, Piso 9, Las
+                    Mercedes.
                     Caracas - Venezuela</p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125549.08972855116!2d-66.96040646959244!3d10.468384101150727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58adcd824807%3A0x93dd2eae0a998483!2sCaracas%2C%20Distrito%20Capital%2C%20Venezuela!5e0!3m2!1ses-419!2sar!4v1638853643723!5m2!1ses-419!2sar"
                     width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                     class="footer__iframe"></iframe>
             </div>
-            <div class="col-12 contenedor__footer--active">
+            <div class="col contenedor__footer--active">
                 <h3 class="footer__subtitulo">Suscribete</h3>
                 <p class="footer__parrafo">Y recibe nuestro boletín con ofertas especiales</p>
                 <form class="footer__form">
@@ -205,8 +215,8 @@
                 <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https//web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
     <!-- Link de Script de Animate -->
     <script src="js/wow.js"></script>
